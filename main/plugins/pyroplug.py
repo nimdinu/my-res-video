@@ -38,6 +38,7 @@ async def get_msg(userbot, client, bot, sender, edit_id, msg_link, i):
         else:
             chat = int('-100' + str(msg_link.split("/")[-2]))
         file = ""
+        msg = ""
         try:
             msg = await userbot.get_messages(chat, msg_id)
             if msg.media:
