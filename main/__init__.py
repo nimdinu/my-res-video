@@ -10,7 +10,6 @@ import logging, time, sys
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
-
 # variables
 API_ID = 5860777
 API_HASH = 'a8595cffe5fca4cf19ea3f3334b4fe46'
