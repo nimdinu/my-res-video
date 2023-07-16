@@ -13,7 +13,6 @@ from ethon.telefunc import fast_upload
 from telethon.tl.types import DocumentAttributeVideo
 from telethon import events
 
-msg = ""
 
 def thumbnail(sender):
     if os.path.exists(f'{sender}.jpg'):
