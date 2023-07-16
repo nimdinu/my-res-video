@@ -13,8 +13,8 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 # variables
 API_ID = 5860777
 API_HASH = 'a8595cffe5fca4cf19ea3f3334b4fe46'
-BOT_TOKEN = '5499781157:AAG75HAazC2254qlnPpszdQviCwcnz7a4OQ'
-SESSION = 'BQBZbakAY0754StrKWn7regyOyZRpAziwcikWhGaZbg6spGk4606VVBi5-Ap0SvboMaNvcq2XWbz6uksFQ2mO1eABiv3DPx7nLkvH0edfgkEF7PkVegHxbMTE1Oiv6VEHC1fMlTN40RQhxBIO9L-M8AY9rHijHRoygYr6FhvG6XzSmWjmFfHj_wqqlKeaEo9ZnenUEXIam57FP4JrHfaS0DYN3XyfQdChPREklazy_dcODOtpBAzOUQUDzvnUv54ucxD_RIL1q_DmvOO3B9nKvjxpj2LLlKnw1q8WuhUu0GHFfmx7_423gXsezstU04cyqwVg1elDuqdEpf32_wi-jHPbsKIJAAAAABtVjAdAA'
+BOT_TOKEN = '6185997244:AAFfufCPMdsXW9hhikuaf410XG2rCm5A6lQ'
+SESSION = 'BQBZbakARZKYrFJyxvYPQHSMOOR5stpxR6dl18Wal2w5ak8lEIkJwEVL6J1zcctkKbDRzirqfYG98mQ9dBe5z4H9XndD9zhPf_5Yka27p5XAG73DLCszj1Xpv5YDREFPT6JnQiOkp2qRm_YanEHhXwuQ9x8XwPx99SKn1H9zP_pnsyYnCQ5yWrALAGKFmYProX1WbfpHhI6XgMHzyODZJt-tbzvqJ1u-yFHJCngeqpXx5VhwcgkpYDLFrQYB7sx-WBwdvY2Zw8_JF7Csiey6Hw3RQXTSK22NxKcWloTsjBSlhqXcJoFhfju0yA5hyVYM2c0Gslc76mAXNd9pCVW8-0OIoxrbWgAAAABtVjAdAA'
 FORCESUB = 'resvvfor'
 AUTH = 1834364957
 
@@ -24,8 +24,9 @@ userbot = Client("saverestricted", session_string=SESSION, api_hash=API_HASH, ap
 
 try:
     userbot.start()
-except BaseException:
+except BaseException as er:
     print("Userbot Error ! Have you added SESSION while deploying??")
+    print(er)
     sys.exit(1)
 
 Bot = Client(
